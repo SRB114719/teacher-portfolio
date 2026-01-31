@@ -2,6 +2,7 @@
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
 import Link from "next/link"
+import Image from "next/image"
 import { Award, Users, BookOpen, GraduationCap, Quote, Target, Heart, TrendingUp } from "lucide-react"
 import { useEffect, useRef, useState } from "react"
 
@@ -135,56 +136,21 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Right Column - Professional Image Placeholder */}
-            <div className="flex items-center justify-center">
-              <div className="relative w-full max-w-sm aspect-square rounded-2xl overflow-hidden shadow-xl">
-                {/* Professional placeholder image - waist-up educator */}
-                <svg
-                  viewBox="0 0 400 500"
-                  className="w-full h-full bg-gradient-to-b from-slate-200 to-slate-100"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  {/* Head */}
-                  <circle cx="200" cy="120" r="50" fill="#d4a574" />
+            {/* Right Column - Professional Image */}
+<div className="flex items-center justify-center">
+  <div className="relative w-full max-w-sm aspect-square rounded-2xl overflow-hidden shadow-xl bg-white border-4 border-secondary/10">
+    
+    <Image
+      src="/new.jpg" 
+      alt="Ram P. Singh - Mathematics & Physics Tutor"
+      fill
+      /* Added scale-110 to zoom in by 10% and hide the edges */
+      className="object-cover object-top scale-110" 
+      priority
+    />
 
-                  {/* Hair */}
-                  <path d="M 150 120 Q 150 60 200 60 Q 250 60 250 120" fill="#2c2c2c" />
-
-                  {/* Smile - simple curved line */}
-                  <path d="M 180 130 Q 200 145 220 130" stroke="#2c2c2c" strokeWidth="2" fill="none" />
-
-                  {/* Eyes */}
-                  <circle cx="185" cy="110" r="3" fill="#2c2c2c" />
-                  <circle cx="215" cy="110" r="3" fill="#2c2c2c" />
-
-                  {/* Neck */}
-                  <rect x="190" y="165" width="20" height="20" fill="#d4a574" />
-
-                  {/* Shirt/Professional attire - Blue formal shirt */}
-                  <path d="M 120 185 L 130 200 L 130 400 L 270 400 L 270 200 L 280 185 Z" fill="#1e40af" />
-
-                  {/* Shirt collar accent */}
-                  <path d="M 200 185 L 185 200 L 215 200 Z" fill="#1e3a8a" />
-
-                  {/* Left arm */}
-                  <ellipse cx="100" cy="250" rx="25" ry="60" fill="#d4a574" transform="rotate(-20 100 250)" />
-
-                  {/* Right arm */}
-                  <ellipse cx="300" cy="250" rx="25" ry="60" fill="#d4a574" transform="rotate(20 300 250)" />
-
-                  {/* Subtle background pattern for professionalism */}
-                  <defs>
-                    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                      <stop offset="0%" style={{ stopColor: "#e2e8f0", stopOpacity: 1 }} />
-                      <stop offset="100%" style={{ stopColor: "#cbd5e1", stopOpacity: 1 }} />
-                    </linearGradient>
-                  </defs>
-                </svg>
-
-                {/* Optional: Soft shadow overlay for depth */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/5 to-transparent pointer-events-none"></div>
-              </div>
-            </div>
+  </div>
+</div>
           </div>
         </div>
       </section>

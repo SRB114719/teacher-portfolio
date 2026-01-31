@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
-
+import Image from "next/image"
 export default function ProfileCard() {
   const cardRef = useRef<HTMLDivElement>(null)
   const [rotation, setRotation] = useState({ x: 0, y: 0 })
@@ -72,21 +72,17 @@ export default function ProfileCard() {
 
         {/* Content */}
         <div className="relative z-10 p-8 flex flex-col items-center text-center">
-          {/* Profile Photo - supports both SVG placeholder and real images */}
-          <div className="relative w-48 h-48 mb-6 rounded-full overflow-hidden border-4 border-white/10 shadow-xl">
-            {/* Fallback gradient background for when no image is provided */}
-            <div className="absolute inset-0 bg-gradient-to-br from-gray-700 to-gray-900 flex items-center justify-center">
-              {/* SVG placeholder - replace this entire div with <img src="/path/to/photo.jpg" alt="Ram P. Singh" className="w-full h-full object-cover" /> */}
-              <svg
-                className="w-32 h-32 text-white/90"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-              </svg>
-            </div>
-          </div>
+         {/* Profile Photo */}
+<div className="relative w-48 h-48 mb-6 rounded-full overflow-hidden border-4 border-white/10 shadow-xl bg-white">
+  <Image
+    src="/sir.jpg"
+    alt="Ram P. Singh"
+    fill
+    /* Using object-top and scale-110 to match your homepage zoom settings */
+    className="object-cover object-top scale-110"
+    priority
+  />
+</div>
 
           {/* Name */}
           <h3 className="text-3xl font-serif font-bold text-white mb-2">Ram P. Singh</h3>

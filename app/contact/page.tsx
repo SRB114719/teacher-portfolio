@@ -124,7 +124,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-foreground mb-2">Email</h3>
-                    <p className="text-muted-foreground text-sm italic">(Email address coming soon)</p>
+                    <p className="text-muted-foreground text-sm italic">physicsrn@gmail.com</p>
                   </div>
                 </div>
               </div>

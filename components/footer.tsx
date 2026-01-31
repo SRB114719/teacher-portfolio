@@ -70,7 +70,7 @@ export default function Footer() {
                 <div className="p-2 bg-white/20 rounded-lg">
                   <Mail className="w-4 h-4 text-white" />
                 </div>
-                <span>Email coming soon</span>
+                <span>physicsrn@gmail.com</span>
               </li>
             </ul>
           </div>
