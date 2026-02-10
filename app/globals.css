@@ -270,6 +270,20 @@
     left: 30%;
     animation: aurora-drift-3 55s ease-in-out infinite;
   }
+  @layer utilities {
+  /* ... keep your existing keyframes and classes like .animate-marquee ... */
+
+  /* ADD THIS NEW CLASS HERE */
+  .shadow-soft {
+    box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05), 
+                0 10px 30px -5px rgba(0, 0, 0, 0.03);
+  }
+
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+  /* ... rest of the file ... */
+}
 }
 
 @layer components {
