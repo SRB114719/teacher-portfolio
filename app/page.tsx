@@ -122,14 +122,14 @@ export default function Home() {
 
             {/* Right Column - Premium Layered Design */}
             <div className="flex items-center justify-center relative py-12 scroll-animate">
-              <div className="relative w-full max-w-[340px] aspect-[4/5]">
+              <div className="relative w-full max-w-[400px] aspect-4/5">
                 {/* Background Shadow Box */}
-                <div className="absolute top-[15%] left-0 w-[85%] h-[70%] bg-primary rounded-[2rem] -z-10 shadow-2xl opacity-90"></div>
+                <div className="absolute top-[15%] left-0 w-[90%] h-[80%] bg-primary rounded-[2rem] -z-10 shadow-2xl opacity-90"></div>
                 
                 {/* Main Circular Image */}
-                <div className="absolute top-0 right-0 w-[85%] aspect-square rounded-full overflow-hidden border-[12px] border-white shadow-[0_20px_50px_rgba(0,0,0,0.15)] bg-white">
+                <div className="absolute top-0 right-0 w-[95%] aspect-square rounded-full overflow-hidden border-[12px] border-white shadow-[0_20px_50px_rgba(0,0,0,0.15)] bg-white">
                   <Image
-                    src="/thispic.png" 
+                    src="/Landingpage.png" 
                     alt="Ram P. Singh"
                     fill
                     className="object-cover object-center scale-150" 
